@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    color: red;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid red;
+    background: #222;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #333;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.edit-btn, .delete-btn, .remove-btn {
+    background-color: #555;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn:hover, .delete-btn:hover, .remove-btn:hover {
+    background-color: #777;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWE Universe Booking Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>WWE Universe Booking Assistant</h1>
+
+    <!-- PPV Input Section -->
+    <section id="ppv-settings">
+        <h2>Set Upcoming PPV</h2>
+        <label>PPV Name: <input type="text" id="ppv-name"></label>
+        <label>Weeks Until PPV: <input type="number" id="weeks-until-ppv" min="1"></label>
+        <button onclick="savePPV()">Save PPV</button>
+        <p id="current-ppv">No PPV set.</p>
+    </section>
+
+    <!-- Match Input Section -->
+    <section id="match-form">
+        <h2>Record Matches for the Week</h2>
+        <label>Brand:
+            <select id="brand">
+                <option value="RAW">RAW</option>
+                <option value="NXT">NXT</option>
+                <option value="SmackDown">SmackDown</option>
+            </select>
+        </label>
+        <label>Wrestler 1: <input type="text" id="wrestler1"></label>
+        <label>Wrestler 2: <input type="text" id="wrestler2"></label>
+        <label>Winner: <input type="text" id="winner"></label>
+        <button onclick="recordMatch()">Save Match</button>
+    </section>
+
+    <!-- Display Previous Matches -->
+    <section id="match-history">
+        <h2>Match History</h2>
+        <ul id="history-list"></ul>
+    </section>
+
+    <!-- Booking Suggestions -->
+    <section id="suggestions">
+        <h2>Next Week's Booking Suggestions</h2>
+        <ul id="booking-list"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
